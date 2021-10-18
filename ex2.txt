@@ -1,0 +1,25 @@
+Simple 5-page case and 2 sequences with the same numbers:
+1 - miss
+2 - miss
+3 - miss
+4 - miss
+5 - miss
+6 - miss + swap
+1 - miss + swap
+2 - miss + swap
+3 - miss + swap
+4 - miss + swap
+5 - miss + swap
+100% miss because number of input pages is biger than page frame number, also sequence is constructed in such a way that the next reference points to the least used/never used page.
+1 - miss
+2 - miss
+3 - miss
+4 - miss
+5 - miss
+6 - miss
+5 - hit
+4 - hit
+3 - hit
+2 - hit
+1 - miss + swap
+63% miss that is mostly only miss because of the new page id initialization(only 1 swap),the sequence is constructed in such a manner that the next reference points to the least recently used page most of the time.
